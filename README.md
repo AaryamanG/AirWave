@@ -1,20 +1,48 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Airwave
 
-# Run and deploy your AI Studio app
+Hands-free computing with your webcam.
 
-This contains everything you need to run your app locally.
+Airwave is an AI-powered desktop application that turns a normal laptop webcam into a hands-free mouse replacement. It lets users control the cursor, click, drag, and scroll using simple hand gestures without needing a physical mouse or touchpad.
 
-View your app in AI Studio: https://ai.studio/apps/f2102a52-c48a-4f6e-b121-a6ca862de026
+Built for Windows using Python, OpenCV, MediaPipe, and C++ acceleration for low-latency gesture processing.
 
-## Run Locally
+## Features
 
-**Prerequisites:**  Node.js
+- Real-time hand tracking using webcam
+- Cursor movement using index fingertip
+- Left click using thumb-index pinch
+- Right click using alternate gesture
+- Drag and drop using hold pinch
+- Scroll using palm tilt or vertical gesture
+- Gesture smoothing and debouncing
+- Sensitivity and calibration controls
+- Live camera preview with landmarks overlay
+- Modern desktop UI
+- Performance-critical modules in C++
 
+## How it works
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+1. Captures webcam frames using OpenCV
+2. Detects hand landmarks using MediaPipe
+3. Interprets gestures from landmark positions
+4. Maps gestures to mouse actions
+5. Uses C++ modules for smoothing, gesture classification, and low-latency cursor mapping
+
+## Tech stack
+
+- Python 3.11+
+- OpenCV
+- MediaPipe
+- PySide6 or PyQt6
+- pyautogui or pynput
+- NumPy
+- C++17
+- pybind11
+
+## Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/your-username/airwave.git
+cd airwave
