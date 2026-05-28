@@ -46,3 +46,22 @@ Built for Windows using Python, OpenCV, MediaPipe, and C++ acceleration for low-
 ```bash
 git clone https://github.com/your-username/airwave.git
 cd airwave
+pip install -r requirements.txt
+python main.py
+cd cpp
+mkdir build
+cd build
+cmake ..
+cmake --build . --config Release
+pip install pyinstaller
+pyinstaller --name Airwave --windowed
+--onefile main.py
+
+
+
+
+
+
+
+
+
