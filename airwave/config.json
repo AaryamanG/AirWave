@@ -1,0 +1,31 @@
+{
+  "camera": {
+    "device_index": 0,
+    "width": 640,
+    "height": 480,
+    "mirror": true,
+    "fps": 30
+  },
+  "mouse": {
+    "speed": 1.5,
+    "acceleration": 2.0,
+    "jitter_threshold": 0.002,
+    "interpolation_factor": 0.25,
+    "edge_padding": 20
+  },
+  "gestures": {
+    "pinch_threshold": 0.04,
+    "click_debounce_ms": 150,
+    "scroll_deadzone": 0.03,
+    "scroll_sensitivity": 0.5,
+    "pause_palm_seconds": 1.0
+  },
+  "mappings": {
+    "pinch_index": "left_click",
+    "pinch_middle": "right_click",
+    "pinch_ring": "middle_click",
+    "pinch_pinky": "screenshot",
+    "two_finger_up_down": "scroll",
+    "open_palm_timeout": "pause_tracking"
+  }
+}

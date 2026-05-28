@@ -1,0 +1,6 @@
+{
+  "name": "Airwave Workspace",
+  "description": "Interactive workspace and workspace simulator for Airwave, the webcam hand gesture mouse replacement.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
